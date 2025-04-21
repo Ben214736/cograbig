@@ -1101,6 +1101,12 @@ nav ul li a:hover {
     .card-body {
         text-align: center;
     }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
    }
 
    @media (max-width: 475px) {
