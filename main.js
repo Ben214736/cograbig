@@ -77,3 +77,34 @@ const swiper = new Swiper('.wrapper', {
         }, 
     }
   });
+
+// HOME PAGE SLIDER
+// Initialize Swiper
+const initCourseSwiper = () => {
+    const swiper = new Swiper('.courses-swiper', {
+        loop: true,
+        spaceBetween: 30,
+        // slidesPerView: 1,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+        }
+    });
+}
+
+// Call on DOM load
+document.addEventListener('DOMContentLoaded', initCourseSwiper);  

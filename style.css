@@ -152,6 +152,110 @@ nav ul li a:hover {
     background-color: #fff;
 }
 
+/* Home FEatured COurses */
+/* Courses Slider */
+#course {
+    padding: 8vw 0 0 0 !important;
+    text-align: center;
+}
+#courses-slider {
+    padding: 1.5rem 0;
+    background: linear-gradient(#EFEFFF, #CCCBFF);
+    
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 1rem;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 1.5rem;
+}
+
+.course-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price {
+    color: #e67e22;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.enroll-btn {
+    background: #2c3e50;
+    color: white!important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+    background: #e67e22;
+}
+
+
+/* Swiper Customization */
+.courses-swiper {
+    padding: 2rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2c3e50!important;
+    background: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.25rem!important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #e67e22!important;
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        margin: 0.5rem;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none!important;
+    }
+}
+
 /* FEATURES SECTION UNDER HOME */
 
 #features {
@@ -187,11 +291,6 @@ nav ul li a:hover {
     font-size: 1rem;
     font-weight: 400;
     color: rgb(70, 70, 87);
-}
-
-/* HOME BOOTSTRAP SLIDER */
-.carousel-inner {
-    display: flex;
 }
 
 
@@ -397,6 +496,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 0;
    }
 
    footer .footer-col {
